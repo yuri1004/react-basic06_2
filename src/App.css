@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body{
+    background-color: #333;
+    font-size: 18px;
+    color: #999;
+}
+#box{
+    width: 1200px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#list{
+    padding: 0 20px;
+    width: 48%;
+    box-sizing: border-box;
+}
+#list>ul>li{
+    border-bottom: 1px solid orange;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+#list>ul>li>dl{
+    width: 80%;
+    position: relative;
+}
+#list>ul>li>dl>dt{
+    font-size: 18px;
+    color: orange;
+    margin-bottom: 5px;
+}
+#list>ul>li>dl>dd{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+#list>ul>li>dl>dd>dfn{
+    font-size: 16px;
+    color: green;
+    padding-right: 10px;
+}
+#list>ul>li>dl>dd:last-child{
+    position: absolute;
+    right: 0; top: 0;
+}
+#list>ul>li>button{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-size: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* form */
+#write{
+    width: 50%;
+    border: 1px solid orange;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#write>h2{
+    background-color: orange;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#write>ul{
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+#write>ul>li{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#write>ul>li>label{
+    width: 15%;
+}
+#write>ul>li>input,#write>ul>li>textarea{
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#write>p>button{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px 0;
+    background-color: orange;
+    color: #fff;
 }
